@@ -13,7 +13,7 @@ partie !
 * Une page avec un formulaire pour ajouter, modifier ou supprimer un client Pas de sécurisation côté api
 * Pas de sécurisation côté api
 
-👉 Objectif pour cette partie:
+👉 Objectif pour cette partie :
 
 Réalisation de l’API web avec Spring boot, en réutilisant la base de données créée lors d’un module précédent.
 
@@ -32,8 +32,8 @@ clients :
 * GET /clients
 * POST /clients
 * PUT /clients/{id}
-* GET /orders/{id}
-* DELETE /orders/{id}
+* GET /clients/{id}
+* DELETE /clients/{id}
 
 💡 Notes :
 * Les state sont en valeur numérique dans la base de donnée mais on utilisera les libellés dans l’API web. Vous pouvez utiliser un Enum java pour gérer cela ;o)
