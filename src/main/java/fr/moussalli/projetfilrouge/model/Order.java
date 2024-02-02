@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 @Table(name = "orders")
 public class Order {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
 
@@ -31,13 +32,15 @@ public class Order {
     @Column(name = "unit_price")
     private BigDecimal unitPrice;
 
+    @Transient
     @Column(name = "total_exclude_taxe")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private BigDecimal totalExcludeTaxe;
 
+    @Transient
     @Column(name = "total_with_taxe")
     private BigDecimal totalWithTaxe;
 
-    @Enumerated(EnumType.ORDINAL)
     @Column(name = "state")
     private OrderState state;
 

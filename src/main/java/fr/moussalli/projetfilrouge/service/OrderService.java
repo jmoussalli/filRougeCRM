@@ -5,6 +5,7 @@ import fr.moussalli.projetfilrouge.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,6 +20,8 @@ public class OrderService {
     }
 
     public Order add(Order a) {
+        a.setTotalExcludeTaxe(BigDecimal.ZERO);
+        a.setTotalWithTaxe(BigDecimal.ZERO);
         return orderRepository.save(a);
     }
 

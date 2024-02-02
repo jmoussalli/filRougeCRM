@@ -39,7 +39,8 @@ clients :
 * Les state sont en valeur numérique dans la base de donnée mais on utilisera les libellés dans l’API web. Vous pouvez utiliser un Enum java pour gérer cela ;o)
 
 * Exemple de body POST pour créer une commande :
-```{
+```
+{
   "typePresta": "IT",
   "designation": "Formation SpringBoot",
   "nbDays": 3,

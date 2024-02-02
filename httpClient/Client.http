@@ -1,0 +1,22 @@
+### GET request with a header
+GET {{baseUrl}}/clients
+Accept: application/json
+### GET request with a header
+GET {{baseUrl}}/clients/2
+Accept: application/json
+### Send POST request with json body
+POST {{baseUrl}}/clients
+Content-Type: application/json
+
+{
+  "companyName": "Hénaff",
+  "firstName": "Paté",
+  "lastName": "Hénaff",
+  "email": "pate@henaff.com",
+  "phone": "06 11 22 33 44",
+  "address": "abc",
+  "zipCode": "29200",
+  "city": "Brest",
+  "country": "France",
+  "state": "INACTIVE"
+}

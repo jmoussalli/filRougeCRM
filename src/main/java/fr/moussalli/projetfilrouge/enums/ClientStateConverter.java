@@ -2,6 +2,7 @@ package fr.moussalli.projetfilrouge.enums;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Converter(autoApply = true)
 public class ClientStateConverter implements AttributeConverter<ClientState, Boolean> {
